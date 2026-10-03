@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex - Full Pokédex Database</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="pokedex-app">
+    <span class="screw screw-tl"></span>
+    <span class="screw screw-tr"></span>
+    <span class="screw screw-bl"></span>
+    <span class="screw screw-br"></span>
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo" onclick="navigate('#/')" role="button" tabindex="0">
+          <span class="pokeball logo-ball"></span>
+          <span class="logo-text">POKÉDEX</span>
+        </div>
+        <nav class="app-nav">
+          <a href="#/" class="nav-link" data-view="home" onclick="event.preventDefault(); navigate('#/')">Home</a>
+          <a href="#/scan" class="nav-link" data-view="scan">Scan</a>
+          <a href="#/pokemon" class="nav-link" data-view="pokemon">Pokémon</a>
+          <a href="#/search" class="nav-link" data-view="search">Search</a>
+          <div class="nav-more" id="navMore">
+            <button class="nav-more-btn" id="moreMenuBtn" onclick="toggleMoreMenu(event)" aria-haspopup="true" aria-expanded="false">More</button>
+            <div class="nav-more-menu" id="navMoreMenu">
+              <a href="#/moves" class="nav-link moves-nav" data-view="moves">Moves</a>
+              <a href="#/abilities" class="nav-link abilities-nav" data-view="abilities">Abilities</a>
+              <a href="#/minigames" class="nav-link minigames-nav" data-view="minigames">Mini Games</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-right">
+        <button class="sound-btn" id="soundBtn" onclick="toggleCryMute()" title="Toggle cry sounds">🔊</button>
+        <button class="help-btn" onclick="toggleInfo()" title="Help: what everything means">?</button>
+        <div class="load-status" id="loadStatus">
+          <span class="status-dot"></span>
+          <span class="status-text">Loading...</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="progress-bar-container" id="progressContainer">
+      <div class="progress-bar" id="progressBar"></div>
+      <div class="progress-text" id="progressText">Starting...</div>
+    </div>
+
+    <main class="app-main">
+      <!-- LANDING VIEW -->
+      <section class="view landing-view" id="landingView">
+        <div class="landing-hero">
+          <span class="pokeball landing-pokeball"></span>
+          <h1 class="landing-title">Pokédex</h1>
+          <p class="landing-subtitle">Explore the complete world of Pokémon: species, forms, moves, and more.</p>
+        </div>
+        <div class="landing-options">
+          <div class="landing-card" onclick="navigate('#/scan')" role="button" tabindex="0">
+            <span class="landing-card-icon">📡</span>
+            <h2 class="landing-card-title">Scan</h2>
+            <p class="landing-card-desc">Scan for a random Pokémon and open its Pokédex entry with strengths and weaknesses.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/pokemon')" role="button" tabindex="0">
+            <span class="landing-card-icon">🐾</span>
+            <h2 class="landing-card-title">Pokémon List</h2>
+            <p class="landing-card-desc">Browse all Pokémon species with sprites, types, and stats.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/search')" role="button" tabindex="0">
+            <span class="landing-card-icon">🔍</span>
+            <h2 class="landing-card-title">Search Pokémon</h2>
+            <p class="landing-card-desc">Find Pokémon using filters: type, region, generation, and more.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/moves')" role="button" tabindex="0">
+            <span class="landing-card-icon">⚡</span>
+            <h2 class="landing-card-title">Moves</h2>
+            <p class="landing-card-desc">Explore all moves by type, damage class, and generation.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/abilities')" role="button" tabindex="0">
+            <span class="landing-card-icon">🧠</span>
+            <h2 class="landing-card-title">Abilities</h2>
+            <p class="landing-card-desc">Browse every ability with descriptions and the Pokémon that have it.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/minigames')" role="button" tabindex="0">
+            <span class="landing-card-icon">🎮</span>
+            <h2 class="landing-card-title">Mini Games</h2>
+            <p class="landing-card-desc">Choose from a collection of Pokémon minigames.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- POKEMON LIST VIEW -->
+      <section class="view" id="pokemonView" style="display:none;">
+        <section class="search-section">
+          <div class="search-container">
+            <div class="filter-options">
+              <button class="filter-btn type-btn active" data-type="" onclick="filterByType('')">All</button>
+              <button class="filter-btn type-btn" data-type="Normal" onclick="filterByType('Normal')">Normal</button>
+              <button class="filter-btn type-btn" data-type="Fire" onclick="filterByType('Fire')">Fire</button>
+              <button class="filter-btn type-btn" data-type="Water" onclick="filterByType('Water')">Water</button>
+              <button class="filter-btn type-btn" data-type="Grass" onclick="filterByType('Grass')">Grass</button>
+              <button class="filter-btn type-btn" data-type="Electric" onclick="filterByType('Electric')">Electric</button>
+              <button class="filter-btn type-btn" data-type="Ice" onclick="filterByType('Ice')">Ice</button>
+              <button class="filter-btn type-btn" data-type="Fighting" onclick="filterByType('Fighting')">Fighting</button>
+              <button class="filter-btn type-btn" data-type="Poison" onclick="filterByType('Poison')">Poison</button>
+              <button class="filter-btn type-btn" data-type="Ground" onclick="filterByType('Ground')">Ground</button>
+              <button class="filter-btn type-btn" data-type="Flying" onclick="filterByType('Flying')">Flying</button>
+              <button class="filter-btn type-btn" data-type="Psychic" onclick="filterByType('Psychic')">Psychic</button>
+              <button class="filter-btn type-btn" data-type="Bug" onclick="filterByType('Bug')">Bug</button>
+              <button class="filter-btn type-btn" data-type="Rock" onclick="filterByType('Rock')">Rock</button>
+              <button class="filter-btn type-btn" data-type="Ghost" onclick="filterByType('Ghost')">Ghost</button>
+              <button class="filter-btn type-btn" data-type="Dragon" onclick="filterByType('Dragon')">Dragon</button>
+              <button class="filter-btn type-btn" data-type="Dark" onclick="filterByType('Dark')">Dark</button>
+              <button class="filter-btn type-btn" data-type="Steel" onclick="filterByType('Steel')">Steel</button>
+              <button class="filter-btn type-btn" data-type="Fairy" onclick="filterByType('Fairy')">Fairy</button>
+            </div>
+            <div class="filter-row">
+              <div class="result-count" id="resultCount"></div>
+              <button class="shiny-toggle" id="shinyTogglePokemon" onclick="toggleShinyMode()" title="Show shiny sprites">✨ Shiny</button>
+            </div>
+            <div class="dex-jump" id="dexJump" aria-label="Jump to a Pokédex number range">
+              <button class="dex-jump-btn" onclick="jumpToDex(1)" title="Jump to #001–#100">1–100</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(101)" title="Jump to #101–#200">101–200</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(201)" title="Jump to #201–#300">201–300</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(301)" title="Jump to #301–#400">301–400</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(401)" title="Jump to #401–#500">401–500</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(501)" title="Jump to #501–#600">501–600</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(601)" title="Jump to #601–#700">601–700</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(701)" title="Jump to #701–#800">701–800</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(801)" title="Jump to #801–#900">801–900</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(901)" title="Jump to #901–#1000">901–1000</button>
+              <button class="dex-jump-btn" onclick="jumpToDex(1001)" title="Jump to #1001–#1025">1001–1025</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="pokemon-grid" id="pokemonGrid">
+          <div class="loading">Loading Pokédex data...</div>
+        </section>
+      </section>
+
+      <!-- SEARCH VIEW -->
+      <section class="view" id="searchView" style="display:none;">
+        <section class="search-section">
+          <div class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search Pokemon by name or number...">
+              <button class="search-btn" onclick="runSearch()">Search</button>
+            </div>
+            <div class="search-filters">
+              <div class="search-filter-group">
+                <span class="search-filter-label">Type</span>
+                <div class="search-type-checkboxes" id="searchTypeFilters"></div>
+              </div>
+              <div class="search-filter-row">
+                <div class="search-filter-group narrow">
+                  <span class="search-filter-label">Region</span>
+                  <select id="searchRegionFilter" onchange="runSearch()">
+                    <option value="">All Regions</option>
+                  </select>
+                </div>
+                <div class="search-filter-group narrow">
+                  <span class="search-filter-label">Form</span>
+                  <select id="searchFormFilter" onchange="runSearch()">
+                    <option value="">All Forms</option>
+                  </select>
+                </div>
+                <div class="search-filter-group narrow">
+                  <span class="search-filter-label">Evolution stage</span>
+                  <select id="searchStageFilter" onchange="runSearch()">
+                    <option value="">Any stage</option>
+                    <option value="first">First stage (Basic)</option>
+                    <option value="middle">Middle</option>
+                    <option value="final">Final form</option>
+                  </select>
+                </div>
+                <div class="search-filter-group narrow">
+                  <span class="search-filter-label">Rarity</span>
+                  <select id="searchRarityFilter" onchange="runSearch()">
+                    <option value="">Any rarity</option>
+                    <option value="legendary">Legendary</option>
+                    <option value="mythical">Mythical</option>
+                    <option value="pseudo">Pseudo-legendary</option>
+                  </select>
+                </div>
+                <div class="search-filter-group narrow">
+                  <span class="search-filter-label">Typing</span>
+                  <select id="searchTypingFilter" onchange="runSearch()">
+                    <option value="">Any typing</option>
+                    <option value="mono">Mono-type (single)</option>
+                    <option value="dual">Dual-type</option>
+                  </select>
+                </div>
+                <label class="search-filter-extra stage-toggle">
+                  <input type="checkbox" id="searchStarterOnly" onchange="runSearch()">
+                  Starter family
+                </label>
+              </div>
+              <label class="search-filter-extra">
+                <input type="checkbox" id="searchIncludeForms" onchange="runSearch()">
+                Include non-default forms (Mega, G-Max, Regional, etc.)
+              </label>
+            </div>
+            <div class="filter-row">
+              <div class="result-count" id="searchResultCount"></div>
+              <button class="shiny-toggle" id="shinyToggleSearch" onclick="toggleShinyMode()" title="Show shiny sprites">✨ Shiny</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="pokemon-grid" id="searchGrid">
+          <div class="empty-state">
+            <span class="empty-icon">🔍</span>
+            <span class="empty-title">Search the Pokédex</span>
+            <span class="empty-text">Type a name or number, or set the filters — results appear here instantly.</span>
+          </div>
+        </section>
+      </section>
+
+      <!-- SCAN VIEW -->
+      <section class="view scan-view" id="scanView" style="display:none;">
+        <div class="scan-panel">
+          <div class="scan-window" id="scanWindow">
+            <div class="scan-grid"></div>
+            <video id="scanVideo" class="scan-camera" playsinline muted autoplay></video>
+            <canvas id="scanCanvas" style="display:none;"></canvas>
+            <div class="scan-reticle">
+              <span class="reticle-corner tl"></span>
+              <span class="reticle-corner tr"></span>
+              <span class="reticle-corner bl"></span>
+              <span class="reticle-corner br"></span>
+            </div>
+            <div class="scan-line"></div>
+            <div class="scan-readout" id="scanReadout">Ready</div>
+          </div>
+          <p class="scan-hint" id="scanHint">Scan a random Pokémon from the Pokédex — or point your camera at a Pokémon in the real world (toys, figures) and at in-game screenshots from your gallery.</p>
+          <input type="file" id="scanFileInput" accept="image/*" style="display:none" onchange="handleGalleryFile(event)">
+          <div class="scan-controls">
+            <button class="scan-btn" id="scanButton" onclick="runScan()">🔍 Random</button>
+            <button class="scan-btn scan-btn-alt" id="cameraScanButton" onclick="startCameraScan()">📷 Camera</button>
+            <button class="scan-btn scan-btn-alt" id="galleryScanButton" onclick="openGalleryScan()">🖼 Gallery</button>
+            <button class="scan-btn scan-btn-cancel" id="cancelScanButton" onclick="cancelCameraScan()" style="display:none;">✕ Stop Camera</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOVES VIEW -->
+      <section class="view" id="movesView" style="display:none;">
+        <section class="search-section moves-controls">
+          <div class="search-container">
+            <div class="search-box">
+              <input type="text" id="moveSearchInput" placeholder="Search moves by name...">
+              <button class="search-btn" onclick="loadMoves()">Search</button>
+            </div>
+            <div class="filter-options">
+              <button class="filter-btn type-btn active" data-movetype="" onclick="filterMovesByType('')">All</button>
+              <button class="filter-btn type-btn" data-movetype="Normal" onclick="filterMovesByType('Normal')">Normal</button>
+              <button class="filter-btn type-btn" data-movetype="Fire" onclick="filterMovesByType('Fire')">Fire</button>
+              <button class="filter-btn type-btn" data-movetype="Water" onclick="filterMovesByType('Water')">Water</button>
+              <button class="filter-btn type-btn" data-movetype="Grass" onclick="filterMovesByType('Grass')">Grass</button>
+              <button class="filter-btn type-btn" data-movetype="Electric" onclick="filterMovesByType('Electric')">Electric</button>
+              <button class="filter-btn type-btn" data-movetype="Ice" onclick="filterMovesByType('Ice')">Ice</button>
+              <button class="filter-btn type-btn" data-movetype="Fighting" onclick="filterMovesByType('Fighting')">Fighting</button>
+              <button class="filter-btn type-btn" data-movetype="Poison" onclick="filterMovesByType('Poison')">Poison</button>
+              <button class="filter-btn type-btn" data-movetype="Ground" onclick="filterMovesByType('Ground')">Ground</button>
+              <button class="filter-btn type-btn" data-movetype="Flying" onclick="filterMovesByType('Flying')">Flying</button>
+              <button class="filter-btn type-btn" data-movetype="Psychic" onclick="filterMovesByType('Psychic')">Psychic</button>
+              <button class="filter-btn type-btn" data-movetype="Bug" onclick="filterMovesByType('Bug')">Bug</button>
+              <button class="filter-btn type-btn" data-movetype="Rock" onclick="filterMovesByType('Rock')">Rock</button>
+              <button class="filter-btn type-btn" data-movetype="Ghost" onclick="filterMovesByType('Ghost')">Ghost</button>
+              <button class="filter-btn type-btn" data-movetype="Dragon" onclick="filterMovesByType('Dragon')">Dragon</button>
+              <button class="filter-btn type-btn" data-movetype="Dark" onclick="filterMovesByType('Dark')">Dark</button>
+              <button class="filter-btn type-btn" data-movetype="Steel" onclick="filterMovesByType('Steel')">Steel</button>
+              <button class="filter-btn type-btn" data-movetype="Fairy" onclick="filterMovesByType('Fairy')">Fairy</button>
+            </div>
+            <div class="move-class-filters">
+              <button class="class-filter active" data-class="" onclick="filterMovesByClass('')">All</button>
+              <button class="class-filter" data-class="physical" onclick="filterMovesByClass('physical')">💥 Physical</button>
+              <button class="class-filter" data-class="special" onclick="filterMovesByClass('special')">✨ Special</button>
+              <button class="class-filter" data-class="status" onclick="filterMovesByClass('status')">🛡 Status</button>
+              <span class="class-filter-sep"></span>
+              <select id="moveKindFilter" onchange="filterMovesByKind(this.value)">
+                <option value="">All Move Kinds</option>
+                <option value="z">Z-Move</option>
+                <option value="max">Max Move</option>
+                <option value="gigantamax">Gigantamax</option>
+              </select>
+              <label class="search-filter-extra move-signature-extra" id="moveSignatureFilter" style="display:none;">
+                <input type="checkbox" id="moveSignatureOnly" onchange="loadMoves()">
+                Signature moves only
+              </label>
+              <span class="class-filter-sep"></span>
+              <select id="moveGenFilter" onchange="loadMoves()">
+                <option value="">All Generations</option>
+              </select>
+            </div>
+            <div class="filter-row">
+              <div class="result-count" id="moveResultCount"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="moves-list" id="movesList">
+          <div class="empty-state">
+            <span class="empty-icon">⚡</span>
+            <span class="empty-title">Moves library</span>
+            <span class="empty-text">Pick a type above — or start typing a name — to browse the move database.</span>
+          </div>
+        </section>
+      </section>
+
+      <!-- ABILITIES VIEW -->
+      <section class="view" id="abilitiesView" style="display:none;">
+        <section class="search-section abilities-controls">
+          <div class="search-container">
+            <div class="search-box">
+              <input type="text" id="abilitySearchInput" placeholder="Search abilities by name or description...">
+              <button class="search-btn" onclick="loadAbilities()">Search</button>
+            </div>
+            <label class="search-filter-extra">
+              <input type="checkbox" id="abilityHiddenOnly" onchange="loadAbilities()">
+              Only hidden abilities
+            </label>
+            <div class="filter-row">
+              <div class="result-count" id="abilityResultCount"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="abilities-list" id="abilitiesList">
+          <div class="loading">Loading abilities...</div>
+        </section>
+      </section>
+
+      <!-- MINI GAMES VIEW -->
+      <section class="view landing-view" id="minigamesView" style="display:none;">
+        <div class="landing-hero">
+          <span class="pokeball landing-pokeball"></span>
+          <h1 class="landing-title">Mini Games</h1>
+          <p class="landing-subtitle">Pick a game and play with friends.</p>
+        </div>
+        <div class="landing-options">
+          <div class="landing-card" onclick="navigate('#/guess')" role="button" tabindex="0">
+            <span class="landing-card-icon">❓</span>
+            <h2 class="landing-card-title">Guess the Pokémon</h2>
+            <p class="landing-card-desc">Identify a Pokémon using up to 7 escalating hints.</p>
+          </div>
+          <div class="landing-card" onclick="navigate('#/dexduel')" role="button" tabindex="0">
+            <span class="landing-card-icon">🎯</span>
+            <h2 class="landing-card-title">Dex Duel</h2>
+            <p class="landing-card-desc">Guess the Pokémon behind a dex number. Closest guess survives — 2–8 players.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GUESS GAME VIEW -->
+      <section class="view guess-view" id="guessView" style="display:none;">
+        <section class="guess-panel">
+          <div class="guess-header">
+            <h2 class="guess-title">Guess the Pokémon</h2>
+            <span class="guess-attempts" id="guessAttempts">Hint 0 / 7</span>
+          </div>
+          <div class="guess-top">
+            <div class="guess-stage" id="guessStage">
+              <span class="guess-silhouette" id="guessSilhouette">❓</span>
+            </div>
+            <div class="guess-input-col">
+              <div class="guess-input-row" id="guessInputRow" style="display:none;">
+                <div class="guess-input-wrap">
+                  <input type="text" id="guessInput" class="guess-input" placeholder="Type your guess..." autocomplete="off" oninput="showGuessSuggestions()" onkeydown="handleGuessInputKey(event)">
+                  <div class="guess-suggestions" id="guessSuggestions"></div>
+                </div>
+                <button class="scan-btn" id="guessSubmitBtn" onclick="submitGuess()">Guess</button>
+              </div>
+              <div class="guess-feedback" id="guessFeedback"></div>
+            </div>
+          </div>
+          <ol class="guess-hints" id="guessHints"></ol>
+          <div class="guess-answer" id="guessAnswer" style="display:none;"></div>
+          <div class="guess-controls">
+            <button class="scan-btn" id="guessHintBtn" onclick="revealHint()">💡 Reveal hint</button>
+            <button class="scan-btn scan-btn-cancel" id="guessRevealBtn" onclick="revealAnswer()" style="display:none;">👁 Reveal answer</button>
+            <button class="scan-btn scan-btn-alt" id="guessNewBtn" onclick="startGuessGame()">🎲 New game</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- DEX DUEL VIEW -->
+      <section class="view guess-view" id="dexduelView" style="display:none;">
+        <section class="guess-panel">
+          <div class="guess-header">
+            <h2 class="guess-title">Dex Duel</h2>
+            <button class="scan-btn scan-btn-alt" onclick="openDexDuel()">↺ Restart</button>
+          </div>
+          <div id="dexduelBody"></div>
+        </section>
+      </section>
+    </main>
+
+    <div class="modal" id="weaknessModal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <span class="modal-title" id="modalTitle">Weakness Analysis</span>
+            <span class="modal-subtitle" id="modalSubtitle"></span>
+          </div>
+          <span class="modal-legend-badge" id="modalLegendBadge" style="display:none;"></span>
+          <span class="modal-nav-btns">
+            <button class="modal-nav" onclick="navigatePopup(-1)" title="Previous (←)" aria-label="Previous">‹</button>
+            <button class="modal-nav" onclick="navigatePopup(1)" title="Next (→)" aria-label="Next">›</button>
+          </span>
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="infoModal" role="dialog" aria-hidden="true">
+      <div class="modal-content info-content">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <span class="modal-title">Help &amp; Items</span>
+            <span class="modal-subtitle">What everything on the Pokédex means</span>
+          </div>
+          <button class="modal-close" onclick="closeInfo()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="info-list">
+            <div class="info-item"><span class="pokeball info-ball"></span><span><strong>Pokéballs</strong> — the Pokédex's signature red-ball motif; it marks the app logo and the home screen hero.</span></div>
+            <div class="info-item"><span class="status-dot ready info-dot"></span><span><strong>LIVE</strong> — the server is connected and the full Pokédex (1025 species + forms) is loaded and ready.</span></div>
+            <div class="info-item"><span class="status-dot loading info-dot"></span><span><strong>Loading</strong> — the database cache is being fetched or rebuilt; the app answers only once this turns LIVE.</span></div>
+            <div class="info-item"><span class="info-types"><img class="type-icon" src="icons/types/fire.png" alt="Fire"><img class="type-icon" src="icons/types/water.png" alt="Water"><img class="type-icon" src="icons/types/grass.png" alt="Grass"></span><span><strong>Type icons</strong> — coloured chips showing a Pokémon's or a move's types; colours follow the official type-coloring.</span></div>
+            <div class="info-item"><span class="info-badges"><span class="type-badge type-mega">Mega</span><span class="card-form-tag">Gigantamax</span><span class="card-form-tag regional">Alolan</span></span><span><strong>Form tabs</strong> — some species have alternate forms (Base, Mega, Primal, Gigantamax, Regional). Each tab shows that form's own entry, types, and stats.</span></div>
+            <div class="info-item"><span class="info-badge-text">✨</span><span><strong>Shiny badge</strong> — the ✨ marks the alternate-coloured sprite. Tap popups show it next to the normal sprite.</span></div>
+            <div class="info-item"><span class="info-badge-text">🔊</span><span><strong>Cry button</strong> — plays the Pokémon's cry sound from the games.</span></div>
+            <div class="info-item"><span class="info-pill">PWR 90</span><span><strong>Move stats</strong> — Power (PWR), Accuracy (ACC), PP, and the generation a move debuted in.</span></div>
+            <div class="info-item"><span class="info-kinds"><img class="move-kind-icon" src="icons/z.png" alt="Z"><img class="move-kind-icon" src="icons/max.png" alt="Max"><img class="move-kind-icon" src="icons/gmax.png" alt="Gmax"></span><span><strong>Move kinds</strong> — Z-Moves, Max Moves, and Gigantamax moves carry their own symbol.</span></div>
+            <div class="info-item"><span class="info-badge-text">💥 ✨ 🛡</span><span><strong>Damage class</strong> — physical, special, or status moves.</span></div>
+            <div class="info-item"><span class="info-badge-text">🧠</span><span><strong>Ability chips</strong> — click an ability to read its full description. Abilities marked <span class="hidden-badge">Hidden</span> are hidden abilities. Clicking anywhere outside the box closes it.</span></div>
+            <div class="info-item"><span class="info-badges"><span class="hidden-badge">Hidden</span></span><span><strong>Hidden badge</strong> — the ability is a hidden ability (page header badge on the Abilities page).</span></div>
+            <div class="info-item"><span class="info-table-row weak">2&times;</span><span><strong>Type effectiveness</strong> — <em>0&times;</em> immune, <em>&frac14;&times;/&frac12;&times;</em> resist, <em>2&times;/4&times;</em> weak. Row colour hints the strength.</span></div>
+            <div class="info-item"><span class="info-badge-text">🔄</span><span><strong>Evolution chart</strong> — shows the family tree. Regional families draw one track per region.</span></div>
+            <div class="info-item"><span class="info-badge-text">📡 📷 🖼</span><span><strong>Scan</strong> — random Pokémon, your camera (real-world toys/figures), or screenshots from your gallery.</span></div>
+            <div class="info-item"><span class="info-badge-text">🗂</span><span><strong>Filters &amp; search</strong> — filter the list by type on the Pokémon page, or combine type, region, form, and generation on the Search page.</span></div>
+            <div class="info-item"><span class="info-badge-text info-glyph legendary-g">★</span><span><strong>Legendary mark</strong> — a gold <em>★</em> on the top-right of a card or popup marks a Legendary Pokémon.</span></div>
+            <div class="info-item"><span class="info-badge-text info-glyph mythical-g">✦</span><span><strong>Mythical mark</strong> — a rose <em>✦</em> on the top-right of a card or popup marks a Mythical Pokémon.</span></div>
+            <div class="info-item"><span class="info-badge-text">🏡</span><span><strong>Home</strong> — tap the Pokéball logo anytime to return to the home screen.</span></div>
+          </div>
+          <div class="info-footer">
+            <button class="owner-lock-btn" id="ownerLockBtn" onclick="toggleOwnerPrompt()" title="Owner-only settings">🔒 Owner</button>
+            <div class="owner-prompt" id="ownerPrompt" hidden>
+              <input type="password" id="ownerKeyInput" placeholder="Owner key" autocomplete="off">
+              <button class="owner-ok-btn" onclick="verifyOwner()">Unlock</button>
+              <span class="owner-msg" id="ownerMsg"></span>
+            </div>
+            <div class="owner-update" id="ownerUpdate" hidden>
+              <button class="update-data-btn" id="updateDataBtn" onclick="requestDataRefresh()">🔄 Update Data</button>
+              <span class="update-data-status" id="updateDataStatus">Fetches the newest Pokémon, moves &amp; abilities from the PokéAPI.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" title="Back to top" aria-label="Back to top">↑</button>
+
+  <div class="onboarding-tip" id="onboardingTip" hidden>
+    <span class="onboarding-tip-icon">📟</span>
+    <div class="onboarding-tip-body">
+      <strong>Welcome to your Rotom-Dex!</strong>
+      <span>This is a handheld Pokédex database. Tap <b>?</b> for the full manual, or explore from Home.</span>
+    </div>
+    <button class="onboarding-tip-close" onclick="dismissOnboarding()" aria-label="Dismiss">✕</button>
+  </div>
+
+  <div class="boot-splash" id="bootSplash">
+    <div class="boot-splash-inner">
+      <span class="pokeball boot-pokeball"></span>
+      <div class="boot-title">ROTOM-DEX</div>
+      <div class="boot-sub">POKÉDEX DATABASE &middot; LINK READY</div>
+      <div class="boot-press">PRESS A</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

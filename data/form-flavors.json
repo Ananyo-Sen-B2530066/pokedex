@@ -1,0 +1,1045 @@
+[
+  {
+    "speciesId": 3,
+    "form": "Gigantamax",
+    "displayName": "Venusaur (Gigantamax)",
+    "baseText": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "text": "In battle, this Pok\u00e9mon swings around two thick vines. If these vines slammed into a 10-story building, they could easily topple it."
+  },
+  {
+    "speciesId": 3,
+    "form": "Mega",
+    "displayName": "Venusaur (Mega)",
+    "baseText": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "text": "In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger."
+  },
+  {
+    "speciesId": 6,
+    "form": "Gigantamax",
+    "displayName": "Charizard (Gigantamax)",
+    "baseText": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "text": "This colossal, flame-winged figure of a Charizard was brought about by Gigantamax energy."
+  },
+  {
+    "speciesId": 6,
+    "form": "Mega X",
+    "displayName": "Charizard (Mega X)",
+    "baseText": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "text": "The overwhelming power that fills its entire body causes it to turn black and creates intense blue flames."
+  },
+  {
+    "speciesId": 6,
+    "form": "Mega Y",
+    "displayName": "Charizard (Mega Y)",
+    "baseText": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "text": "Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet."
+  },
+  {
+    "speciesId": 9,
+    "form": "Gigantamax",
+    "displayName": "Blastoise (Gigantamax)",
+    "baseText": "A brutal POK\u00e9MON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "text": "It's not very good at precision shooting. When attacking, it just fires its 31 cannons over and over and over."
+  },
+  {
+    "speciesId": 9,
+    "form": "Mega",
+    "displayName": "Blastoise (Mega)",
+    "baseText": "A brutal POK\u00e9MON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+  },
+  {
+    "speciesId": 12,
+    "form": "Gigantamax",
+    "displayName": "Butterfree (Gigantamax)",
+    "baseText": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "text": "Crystallized Gigantamax energy makes up this Pok\u00e9mon\u2019s blindingly bright and highly toxic scales."
+  },
+  {
+    "speciesId": 15,
+    "form": "Mega",
+    "displayName": "Beedrill (Mega)",
+    "baseText": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
+    "text": "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
+  },
+  {
+    "speciesId": 18,
+    "form": "Mega",
+    "displayName": "Pidgeot (Mega)",
+    "baseText": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+    "text": "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
+  },
+  {
+    "speciesId": 25,
+    "form": "Gigantamax",
+    "displayName": "Pikachu (Gigantamax)",
+    "baseText": "When several of these POK\u00e9MON gather, their electricity could build and cause lightning storms.",
+    "text": "Its Gigantamax power expanded, forming its supersized body and towering tail."
+  },
+  {
+    "speciesId": 26,
+    "form": "Mega X",
+    "displayName": "Raichu (Mega X)",
+    "baseText": "Its long tail serves as a ground to protect itself from its own high voltage power.",
+    "text": "It resembles an X as it flies through the air with 50 million volts of electricity sparking from its ears and forked tail."
+  },
+  {
+    "speciesId": 26,
+    "form": "Mega Y",
+    "displayName": "Raichu (Mega Y)",
+    "baseText": "Its long tail serves as a ground to protect itself from its own high voltage power.",
+    "text": "It fires bolts of electricity from the tip of its tail and from the spiky tufts of fur growing out of its temples. This electricity forms the letter Y."
+  },
+  {
+    "speciesId": 36,
+    "form": "Mega",
+    "displayName": "Clefable (Mega)",
+    "baseText": "A timid fairy POK\u00e9MON that is rarely seen. It will run and hide the moment it senses people.",
+    "text": "It flies by using the power of moonlight to control gravity within a radius of over 32 feet around it."
+  },
+  {
+    "speciesId": 52,
+    "form": "Gigantamax",
+    "displayName": "Meowth (Gigantamax)",
+    "baseText": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
+    "text": "The pattern that has appeared on its giant coin is thought to be the key to unlocking the secrets of the Dynamax phenomenon."
+  },
+  {
+    "speciesId": 65,
+    "form": "Mega",
+    "displayName": "Alakazam (Mega)",
+    "baseText": "Its brain can out\u00ad perform a super\u00ad computer. Its intelligence quotient is said to be 5,000.",
+    "text": "It sends out psychic power from the red organ on its forehead to foresee its opponents' every move."
+  },
+  {
+    "speciesId": 68,
+    "form": "Gigantamax",
+    "displayName": "Machamp (Gigantamax)",
+    "baseText": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
+    "text": "The Gigantamax energy coursing through its arms makes its punches hit as hard as bomb blasts."
+  },
+  {
+    "speciesId": 71,
+    "form": "Mega",
+    "displayName": "Victreebel (Mega)",
+    "baseText": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+    "text": "The volume of this Pok\u00e9mon's acid has increased due to Mega Evolution, filling its mouth. If it's not careful, the acid will overflow and spill out."
+  },
+  {
+    "speciesId": 80,
+    "form": "Mega",
+    "displayName": "Slowbro (Mega)",
+    "baseText": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
+    "text": "All the energy from Mega Evolution poured into the Shellder on its tail, leaving Slowpoke to be swallowed whole."
+  },
+  {
+    "speciesId": 94,
+    "form": "Gigantamax",
+    "displayName": "Gengar (Gigantamax)",
+    "baseText": "Under a full moon, this POK\u00e9MON likes to mimic the shadows of people and laugh at their fright.",
+    "text": "Rumor has it that its gigantic mouth leads not into its body, filled with cursed energy, but instead directly to the afterlife."
+  },
+  {
+    "speciesId": 94,
+    "form": "Mega",
+    "displayName": "Gengar (Mega)",
+    "baseText": "Under a full moon, this POK\u00e9MON likes to mimic the shadows of people and laugh at their fright.",
+    "text": "It can pass through other dimensions and appear anywhere. It caused a stir one time when it stuck just one leg out of a wall."
+  },
+  {
+    "speciesId": 99,
+    "form": "Gigantamax",
+    "displayName": "Kingler (Gigantamax)",
+    "baseText": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
+    "text": "The flow of Gigantamax energy has spurred this Pokémon’s left pincer to grow to an enormous size. That claw can pulverize anything."
+  },
+  {
+    "speciesId": 115,
+    "form": "Mega",
+    "displayName": "Kangaskhan (Mega)",
+    "baseText": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
+    "text": "Its child has grown rapidly, thanks to the energy of Mega Evolution. Mother and child show off their harmonious teamwork in battle."
+  },
+  {
+    "speciesId": 121,
+    "form": "Mega",
+    "displayName": "Starmie (Mega)",
+    "baseText": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+    "text": "Its movements have become more humanlike. Whether it’s simply trying to communicate or wants to supplant humanity is unclear."
+  },
+  {
+    "speciesId": 127,
+    "form": "Mega",
+    "displayName": "Pinsir (Mega)",
+    "baseText": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
+    "text": "With its vaunted horns, it can lift an opponent 10 times heavier than itself and fly about with ease."
+  },
+  {
+    "speciesId": 130,
+    "form": "Mega",
+    "displayName": "Gyarados (Mega)",
+    "baseText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+    "text": "Although it obeys its instinctive drive to destroy everything within its reach, it will respond to orders from a Trainer it truly trusts."
+  },
+  {
+    "speciesId": 131,
+    "form": "Gigantamax",
+    "displayName": "Lapras (Gigantamax)",
+    "baseText": "A POK\u00e9MON that has been over\u00ad hunted almost to extinction. It can ferry people across the water.",
+    "text": "It surrounds itself with a huge ring of gathered ice particles. It uses the ring to smash any icebergs that might impede its graceful swimming."
+  },
+  {
+    "speciesId": 133,
+    "form": "Gigantamax",
+    "displayName": "Eevee (Gigantamax)",
+    "baseText": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+    "text": "Gigantamax energy upped the fluffiness of the fur around Eevee’s neck. The fur will envelop a foe, capturing its body and captivating its mind."
+  },
+  {
+    "speciesId": 142,
+    "form": "Mega",
+    "displayName": "Aerodactyl (Mega)",
+    "baseText": "A ferocious, pre\u00ad historic POK\u00e9MON that goes for the enemy's throat with its serrated saw-like fangs.",
+    "text": "The power of Mega Evolution has completely restored its genes. The rocks on its body are harder than diamond."
+  },
+  {
+    "speciesId": 143,
+    "form": "Gigantamax",
+    "displayName": "Snorlax (Gigantamax)",
+    "baseText": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+    "text": "Gigantamax energy has affected stray seeds and even pebbles that got stuck to Snorlax, making them grow to a huge size."
+  },
+  {
+    "speciesId": 149,
+    "form": "Mega",
+    "displayName": "Dragonite (Mega)",
+    "baseText": "An extremely rarely seen marine POK\u00e9MON. Its intelligence is said to match that of humans.",
+    "text": "Mega Evolution has excessively powered up this Pokémon’s feelings of kindness. It finishes off its opponents with mercy in its heart."
+  },
+  {
+    "speciesId": 150,
+    "form": "Mega X",
+    "displayName": "Mewtwo (Mega X)",
+    "baseText": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "text": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!"
+  },
+  {
+    "speciesId": 150,
+    "form": "Mega Y",
+    "displayName": "Mewtwo (Mega Y)",
+    "baseText": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "text": "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
+  },
+  {
+    "speciesId": 154,
+    "form": "Mega",
+    "displayName": "Meganium (Mega)",
+    "baseText": "The aroma that rises from its petals contains a substance that calms aggressive feelings.",
+    "text": "This Pok\u00e9mon can fire a tremendously powerful Solar Beam from its four flowers. Another name for this is Mega Sol Cannon."
+  },
+  {
+    "speciesId": 160,
+    "form": "Mega",
+    "displayName": "Feraligatr (Mega)",
+    "baseText": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.",
+    "text": "With its arms and hoodlike fin, this Pok\u00e9mon forms a gigantic set of jaws with a bite 10 times as powerful as Mega Feraligatr\u2019s actual jaws."
+  },
+  {
+    "speciesId": 181,
+    "form": "Mega",
+    "displayName": "Ampharos (Mega)",
+    "baseText": "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
+    "text": "Massive amounts of energy intensely stimulated Ampharos’s cells, apparently awakening its long-sleeping dragon’s blood."
+  },
+  {
+    "speciesId": 208,
+    "form": "Mega",
+    "displayName": "Steelix (Mega)",
+    "baseText": "Its body has been compressed deep under the ground. As a result, it is even harder than a diamond.",
+    "text": "Steelix lives even further underground than Onix. This Pokémon is known to dig toward the earth’s core. There are records of this Pokémon reaching a depth of over six-tenths of a mile underground."
+  },
+  {
+    "speciesId": 212,
+    "form": "Mega",
+    "displayName": "Scizor (Mega)",
+    "baseText": "It swings its eye- patterned pincers up to scare its foes. This makes it look like it has three heads.",
+    "text": "It stores the excess energy from Mega Evolution, so after a long time passes, its body starts to melt."
+  },
+  {
+    "speciesId": 214,
+    "form": "Mega",
+    "displayName": "Heracross (Mega)",
+    "baseText": "This powerful POK\u00e9MON thrusts its prized horn under its enemies\u2019 bellies then lifts and throws them.",
+    "text": "It can grip things with its two horns and lift 500 times its own body weight."
+  },
+  {
+    "speciesId": 227,
+    "form": "Mega",
+    "displayName": "Skarmory (Mega)",
+    "baseText": "Its sturdy wings look heavy, but they are actually hollow and light, allowing it to fly freely in the sky.",
+    "text": "It flies faster than the speed of sound. After whipping up shock waves to send enemies flying, it finishes them off with its talons."
+  },
+  {
+    "speciesId": 229,
+    "form": "Mega",
+    "displayName": "Houndoom (Mega)",
+    "baseText": "If you are burned by the flames it shoots from its mouth, the pain will never go away.",
+    "text": "Houndoom’s entire body generates heat when it Mega Evolves. Its fearsome fiery breath turns its opponents to ash."
+  },
+  {
+    "speciesId": 248,
+    "form": "Mega",
+    "displayName": "Tyranitar (Mega)",
+    "baseText": "Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies.",
+    "text": "The effects of Mega Evolution make it more ferocious than ever. It’s unclear whether it can even hear its Trainer’s orders."
+  },
+  {
+    "speciesId": 254,
+    "form": "Mega",
+    "displayName": "Sceptile (Mega)",
+    "baseText": "The leaves growing on SCEPTILE\u2019s body are very sharp edged. This POK\u00e9MON is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind.",
+    "text": "The seeds on its back are filled with energy from Mega Evolution. The Pok\u00e9mon detonates these seeds to launch the tip of its tail."
+  },
+  {
+    "speciesId": 257,
+    "form": "Mega",
+    "displayName": "Blaziken (Mega)",
+    "baseText": "In battle, BLAZIKEN blows out intense flames from its wrists and attacks foes courageously. The stronger the foe, the more intensely this POK\u00e9MON\u2019s wrists burn.",
+    "text": "Boiling-hot blood courses through its entire body, doubling the sharpness of its moves. It subdues opponents in the blink of an eye."
+  },
+  {
+    "speciesId": 260,
+    "form": "Mega",
+    "displayName": "Swampert (Mega)",
+    "baseText": "SWAMPERT is very strong. It has enough power to easily drag a boulder weighing more than a ton. This POK\u00e9MON also has powerful vision that lets it see even in murky water.",
+    "text": "The water within its body further strengthens its already enlarged muscles, using the same principles as a hydraulic pump."
+  },
+  {
+    "speciesId": 282,
+    "form": "Mega",
+    "displayName": "Gardevoir (Mega)",
+    "baseText": "GARDEVOIR has the ability to read the future. If it senses impending danger to its TRAINER, this POK\u00e9MON is said to unleash its psychokinetic energy at full power.",
+    "text": "Gardevoir has the ability to read the future. If it senses impending danger to its Trainer, this Pokémon is said to unleash its psychokinetic energy at full power."
+  },
+  {
+    "speciesId": 302,
+    "form": "Mega",
+    "displayName": "Sableye (Mega)",
+    "baseText": "SABLEYE lead quiet lives deep inside caverns. They are feared, however, because these POK\u00e9MON are thought to steal the spirits of people when their eyes burn with a sinister glow in the darkness.",
+    "text": "It blocks any and all attacks with its giant-sized gemstone. However, the stone’s a heavy burden, and it limits Mega Sableye’s movements."
+  },
+  {
+    "speciesId": 303,
+    "form": "Mega",
+    "displayName": "Mawile (Mega)",
+    "baseText": "MAWHILE\u2019s huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, MAWHILE chomps it with its gaping jaws.",
+    "text": "It has an extremely vicious disposition. It grips prey in its two sets of jaws and tears them apart with raw power."
+  },
+  {
+    "speciesId": 306,
+    "form": "Mega",
+    "displayName": "Aggron (Mega)",
+    "baseText": "AGGRON claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This POK\u00e9MON vigilantly patrols its territory at all times.",
+    "text": "Aggron is protective of its environment. If its mountain is ravaged by a landslide or a fire, this Pokémon will haul topsoil to the area, plant trees, and beautifully restore its own territory."
+  },
+  {
+    "speciesId": 308,
+    "form": "Mega",
+    "displayName": "Medicham (Mega)",
+    "baseText": "It is said that through meditation, MEDICHAM heightens energy inside its body and sharpens its sixth sense. This POK\u00e9MON hides its presence by merging itself with fields and mountains.",
+    "text": "Through the power of meditation, Medicham developed its sixth sense. It gained the ability to use psychokinetic powers. This Pokémon is known to meditate for a whole month without eating."
+  },
+  {
+    "speciesId": 310,
+    "form": "Mega",
+    "displayName": "Manectric (Mega)",
+    "baseText": "MANECTRIC is constantly discharging electricity from its mane. The sparks sometimes ignite forest fires. When it enters a battle, this POK\u00e9MON creates thunderclouds.",
+    "text": "Mega Evolution fills its body with a tremendous amount of electricity, but it’s too much for Manectric to fully control."
+  },
+  {
+    "speciesId": 319,
+    "form": "Mega",
+    "displayName": "Sharpedo (Mega)",
+    "baseText": "Nicknamed \u201cthe bully of the sea,\u201d SHARPEDO is widely feared. Its cruel fangs grow back immediately if they snap off. Just one of these POK\u00e9MON can thoroughly tear apart a supertanker.",
+    "text": "The yellow patterns it bears are old scars. The energy from Mega Evolution runs through them, causing it sharp pain and suffering."
+  },
+  {
+    "speciesId": 323,
+    "form": "Mega",
+    "displayName": "Camerupt (Mega)",
+    "baseText": "CAMERUPT has a volcano inside its body. Magma of 18,000 degrees F courses through its body. Occasionally, the humps on this POK\u00e9MON\u2019s back erupt, spewing the superheated magma.",
+    "text": "The humps on Camerupt’s back are formed by a transformation of its bones. They sometimes blast out molten magma. This Pokémon apparently erupts often when it is enraged."
+  },
+  {
+    "speciesId": 334,
+    "form": "Mega",
+    "displayName": "Altaria (Mega)",
+    "baseText": "ALTARIA dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this POK\u00e9MON makes its listeners experience dreamy wonderment.",
+    "text": "Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment."
+  },
+  {
+    "speciesId": 354,
+    "form": "Mega",
+    "displayName": "Banette (Mega)",
+    "baseText": "BANETTE generates energy for laying strong curses by sticking pins into its own body. This POK\u00e9MON was originally a pitiful plush doll that was thrown away.",
+    "text": "Mega Evolution increases its vindictiveness, and the cursing power that was held back by its zipper comes spilling out."
+  },
+  {
+    "speciesId": 358,
+    "form": "Mega",
+    "displayName": "Chimecho (Mega)",
+    "baseText": "CHIMECHO makes its cries echo inside its hollow body. When this POK\u00e9MON becomes enraged, its cries result in ultrasonic waves that have the power to knock foes flying.",
+    "text": "It vibrates its entire body to attack in all directions using sound waves. Any who hear the vibrations get so confused, they forget who they are."
+  },
+  {
+    "speciesId": 359,
+    "form": "Mega",
+    "displayName": "Absol (Mega)",
+    "baseText": "Every time ABSOL appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster POK\u00e9MON.",
+    "text": "When this Pokémon whips the winglike fur on its back as though beating its wings, it sends an intimidating aura flying at its opponents."
+  },
+  {
+    "speciesId": 359,
+    "form": "Mega Z",
+    "displayName": "Absol (Mega Z)",
+    "baseText": "Every time ABSOL appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster POK\u00e9MON.",
+    "text": "Using fur that it has made into sharp, clawlike shapes, it cuts down foes with a single blow. This is an act of kindness to keep them from suffering."
+  },
+  {
+    "speciesId": 362,
+    "form": "Mega",
+    "displayName": "Glalie (Mega)",
+    "baseText": "GLALIE has a body made of rock, which it hardens with an armor of ice. This POK\u00e9MON has the ability to freeze moisture in the atmosphere into any shape it desires.",
+    "text": "When it spews stupendously cold air from its broken mouth, the entire area around it gets whited out."
+  },
+  {
+    "speciesId": 373,
+    "form": "Mega",
+    "displayName": "Salamence (Mega)",
+    "baseText": "SALAMENCE came about as a result of a strong, long-held dream of growing wings. It is said that this powerful desire triggered a sudden mutation in this POK\u00e9MON\u2019s cells, causing it to sprout its magnificent wings.",
+    "text": "The stress of its two proud wings becoming misshapen and stuck together because of strong energy makes it go on a rampage."
+  },
+  {
+    "speciesId": 376,
+    "form": "Mega",
+    "displayName": "Metagross (Mega)",
+    "baseText": "METAGROSS has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This POK\u00e9MON can float in the air by tucking in its four legs.",
+    "text": "Mega Evolution stimulated its brain. It emerged as a ruthless Pokémon that will clutch at any means of ensuring its victories."
+  },
+  {
+    "speciesId": 380,
+    "form": "Mega",
+    "displayName": "Latias (Mega)",
+    "baseText": "LATIAS is highly sensitive to the emotions of people. If it senses any hostility, this POK\u00e9MON ruffles the feathers all over its body and cries shrilly to intimidate the foe.",
+    "text": "Latias is highly sensitive to the emotions of people. If it senses any hostility, this Pokémon ruffles the feathers all over its body and cries shrilly to intimidate the foe."
+  },
+  {
+    "speciesId": 381,
+    "form": "Mega",
+    "displayName": "Latios (Mega)",
+    "baseText": "LATIOS has the ability to make its foe see an image of what it has seen or imagines in its head. This POK\u00e9MON is intelligent and understands human speech.",
+    "text": "Latios has the ability to make others see an image of what it has seen or imagines in its head. This Pokémon is intelligent and understands human speech."
+  },
+  {
+    "speciesId": 382,
+    "form": "Primal",
+    "displayName": "Kyogre (Primal)",
+    "baseText": "KYOGRE has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours. This POK\u00e9MON saved people who were suffering from droughts.",
+    "text": "Through Primal Reversion and with nature’s full power, it will take back its true form. It can summon storms that cause the sea levels to rise."
+  },
+  {
+    "speciesId": 383,
+    "form": "Primal",
+    "displayName": "Groudon (Primal)",
+    "baseText": "GROUDON has long been described in mythology as the POK\u00e9MON that raised lands and expanded continents. This POK\u00e9MON took to sleep after a cataclysmic battle with KYOGRE.",
+    "text": "Through Primal Reversion and with nature’s full power, it will take back its true form. It can cause magma to erupt and expand the landmass of the world."
+  },
+  {
+    "speciesId": 384,
+    "form": "Mega",
+    "displayName": "Rayquaza (Mega)",
+    "baseText": "RAYQUAZA lived for hundreds of millions of years in the earth\u2019s ozone layer, never descending to the ground. This POK\u00e9MON appears to feed on water and particles in the atmosphere.",
+    "text": "It flies forever through the ozone layer, consuming meteoroids for sustenance. The many meteoroids in its body provide the energy it needs to Mega Evolve."
+  },
+  {
+    "speciesId": 398,
+    "form": "Mega",
+    "displayName": "Staraptor (Mega)",
+    "baseText": "It has a savage nature. It will courageously challenge foes that are much larger.",
+    "text": "Mega Staraptor is a top-class flier. It can easily soar through the sky while gripping a Steelix that weighs more than 880 lbs."
+  },
+  {
+    "speciesId": 428,
+    "form": "Mega",
+    "displayName": "Lopunny (Mega)",
+    "baseText": "An extremely cautious Pok\u00e9mon. It cloaks its body with its fluffy ear fur when it senses danger.",
+    "text": "Mega Evolution awakens its combative instincts. It has shed any fur that got in the way of its attacks."
+  },
+  {
+    "speciesId": 445,
+    "form": "Mega",
+    "displayName": "Garchomp (Mega)",
+    "baseText": "When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed.",
+    "text": "Its disposition is more vicious than before its Mega Evolution. Garchomp carves its opponents up with the scythes on both arms."
+  },
+  {
+    "speciesId": 445,
+    "form": "Mega Z",
+    "displayName": "Garchomp (Mega Z)",
+    "baseText": "When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed.",
+    "text": "Garchomp has gained a new Mega-Evolved form. It flies around foes at Mach speed and cuts them to shreds with its sinister wing claws."
+  },
+  {
+    "speciesId": 448,
+    "form": "Mega",
+    "displayName": "Lucario (Mega)",
+    "baseText": "It has the ability to sense the auras of all things. It understands human speech.",
+    "text": "Black streaks all over its body show where its auras and the energy of Mega Evolution intermingled and raced through it."
+  },
+  {
+    "speciesId": 448,
+    "form": "Mega Z",
+    "displayName": "Lucario (Mega Z)",
+    "baseText": "It has the ability to sense the auras of all things. It understands human speech.",
+    "text": "By completely cloaking itself in its aura, Mega Lucario Z can parry all manner of attacks, battling as if it were gracefully dancing."
+  },
+  {
+    "speciesId": 460,
+    "form": "Mega",
+    "displayName": "Abomasnow (Mega)",
+    "baseText": "It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman.",
+    "text": "It lives a quiet life on mountains that are perpetually covered in snow. It hides itself by whipping up blizzards."
+  },
+  {
+    "speciesId": 475,
+    "form": "Mega",
+    "displayName": "Gallade (Mega)",
+    "baseText": "A master of courtesy and swordsmanship, it fights using extending swords on its elbows.",
+    "text": "Because it can sense what its foe is thinking, its attacks burst out first, fast, and fierce."
+  },
+  {
+    "speciesId": 478,
+    "form": "Mega",
+    "displayName": "Froslass (Mega)",
+    "baseText": "It freezes foes with an icy breath nearly -60 degrees F. What seems to be its body is actually hollow.",
+    "text": "This Pokémon can use eerie cold air imbued with ghost energy to freeze even insubstantial things, such as flames or the wind."
+  },
+  {
+    "speciesId": 485,
+    "form": "Mega",
+    "displayName": "Heatran (Mega)",
+    "baseText": "It dwells in volcanic caves. It digs in with its cross-shaped feet to crawl on ceilings and walls.",
+    "text": "It's said that if it goes all out, it can heat its body up to temperatures over 1.8 million degrees Fahrenheit. This heat keeps enemies at bay."
+  },
+  {
+    "speciesId": 491,
+    "form": "Mega",
+    "displayName": "Darkrai (Mega)",
+    "baseText": "It can lull people to sleep and make them dream. It is active during nights of the new moon.",
+    "text": "Its dark power blocks out the sun, plunging the surrounding area into darkness. There is no escaping its evil eye."
+  },
+  {
+    "speciesId": 500,
+    "form": "Mega",
+    "displayName": "Emboar (Mega)",
+    "baseText": "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends.",
+    "text": "Brandishing a blazing flame shaped like a serpentine spear, it rushes in to rescue its imperiled allies."
+  },
+  {
+    "speciesId": 530,
+    "form": "Mega",
+    "displayName": "Excadrill (Mega)",
+    "baseText": "It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates.",
+    "text": "If this Pokémon brings its arms and head together to form a streamlined shape and spins at high speeds, it can destroy anything."
+  },
+  {
+    "speciesId": 531,
+    "form": "Mega",
+    "displayName": "Audino (Mega)",
+    "baseText": "It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling.",
+    "text": "Using the feelers on its ears, it can tell how someone is feeling or when an egg might hatch."
+  },
+  {
+    "speciesId": 545,
+    "form": "Mega",
+    "displayName": "Scolipede (Mega)",
+    "baseText": "With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails.",
+    "text": "Its deadly venom gives off a faint glow. The venom affects Scolipede’s mind, honing its viciousness."
+  },
+  {
+    "speciesId": 560,
+    "form": "Mega",
+    "displayName": "Scrafty (Mega)",
+    "baseText": "Groups of them beat up anything that enters their territory. Each can spit acidic liquid from its mouth.",
+    "text": "Mega Evolution has caused Scrafty’s shed skin to turn white, growing tough and supple. Of course, this Pokémon is still as feisty as ever."
+  },
+  {
+    "speciesId": 569,
+    "form": "Gigantamax",
+    "displayName": "Garbodor (Gigantamax)",
+    "baseText": "It clenches opponents with its left arm and finishes them off with foul-smelling poison gas belched from its mouth.",
+    "text": "Due to Gigantamax energy, this Pokémon’s toxic gas has become much thicker, congealing into masses shaped like discarded toys."
+  },
+  {
+    "speciesId": 604,
+    "form": "Mega",
+    "displayName": "Eelektross (Mega)",
+    "baseText": "They crawl out of the ocean using their arms. They will attack prey on shore and immediately drag it into the ocean.",
+    "text": "It now generates 10 times the electricity it did before Mega Evolving. It discharges this electricity from its false Eelektrik, which are made of mucus."
+  },
+  {
+    "speciesId": 609,
+    "form": "Mega",
+    "displayName": "Chandelure (Mega)",
+    "baseText": "It absorbs a spirit, which it then burns. By waving the flames on its arms, it puts its foes into a hypnotic trance.",
+    "text": "One of its eyes is a window linking our world with the afterlife. This Pokémon draws in hatred and converts it into power."
+  },
+  {
+    "speciesId": 623,
+    "form": "Mega",
+    "displayName": "Golurk (Mega)",
+    "baseText": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.",
+    "text": "The energy within Golurk has been stimulated by Mega Evolution. The Pokémon could explode at any moment."
+  },
+  {
+    "speciesId": 652,
+    "form": "Mega",
+    "displayName": "Chesnaught (Mega)",
+    "baseText": "Its Tackle is forceful enough to flip a 50-ton tank. It shields its allies from danger with its own body.",
+    "text": "It has fortified armor and a will to defend at all costs. Both are absurdly strong."
+  },
+  {
+    "speciesId": 655,
+    "form": "Mega",
+    "displayName": "Delphox (Mega)",
+    "baseText": "It gazes into the flame at the tip of its branch to achieve a focused state, which allows it to see into the future.",
+    "text": "It wields flaming branches to dazzle its opponents before incinerating them with a huge fireball."
+  },
+  {
+    "speciesId": 658,
+    "form": "Mega",
+    "displayName": "Greninja (Mega)",
+    "baseText": "It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two.",
+    "text": "This Pok\u00e9mon spins a giant shuriken at high speed to make it float, then clings to it upside down to catch opponents unawares."
+  },
+  {
+    "speciesId": 668,
+    "form": "Mega",
+    "displayName": "Pyroar (Mega)",
+    "baseText": "The male with the largest mane of fire is the leader of the pride.",
+    "text": "This Pokémon spews flames hotter than 18,000 degrees Fahrenheit. It swings around its grand, blazing mane as it protects its allies."
+  },
+  {
+    "speciesId": 670,
+    "form": "Eternal",
+    "displayName": "Floette (Eternal)",
+    "baseText": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.",
+    "text": "This rare Floette holds a plant that died out in ancient times. The Pokémon is said to harbor an incredible power."
+  },
+  {
+    "speciesId": 670,
+    "form": "Mega",
+    "displayName": "Floette (Mega)",
+    "baseText": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.",
+    "text": "The Eternal Flower has absorbed all the energy from Mega Evolution. The flower now attacks enemies on its own."
+  },
+  {
+    "speciesId": 678,
+    "form": "Mega FEMALE",
+    "displayName": "Meowstic (Mega FEMALE)",
+    "baseText": "When in danger, it raises its ears and releases enough psychic power to grind a 10-ton truck into dust.",
+    "text": "Mega Meowstic can use its psychic power to compress or expand anything. It overwhelms foes by contorting space itself."
+  },
+  {
+    "speciesId": 678,
+    "form": "Mega MALE",
+    "displayName": "Meowstic (Mega MALE)",
+    "baseText": "When in danger, it raises its ears and releases enough psychic power to grind a 10-ton truck into dust.",
+    "text": "Mega Meowstic can use its psychic power to compress or expand anything. It overwhelms foes by contorting space itself."
+  },
+  {
+    "speciesId": 687,
+    "form": "Mega",
+    "displayName": "Malamar (Mega)",
+    "baseText": "It wields the most compelling hypnotic powers of any Pok\u00e9mon, and it forces others to do whatever it wants.",
+    "text": "It uses its colorful lights to overwrite the personalities and memories of others\u2014and to control them."
+  },
+  {
+    "speciesId": 689,
+    "form": "Mega",
+    "displayName": "Barbaracle (Mega)",
+    "baseText": "When they evolve, two Binacle multiply into seven. They fight with the power of seven Binacle.",
+    "text": "It uses its many arms to toy with its opponents. This keeps the head extremely busy."
+  },
+  {
+    "speciesId": 691,
+    "form": "Mega",
+    "displayName": "Dragalge (Mega)",
+    "baseText": "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory.",
+    "text": "It spits a liquid that causes the regenerative power of cells to run wild. The liquid is deadly poison to everything other than itself."
+  },
+  {
+    "speciesId": 701,
+    "form": "Mega",
+    "displayName": "Hawlucha (Mega)",
+    "baseText": "Although its body is small, its proficient fighting skills enable it to keep up with big bruisers like Machamp and Hariyama.",
+    "text": "Mega Evolution has pumped up all its muscles. Hawlucha flexes to show off its strength."
+  },
+  {
+    "speciesId": 718,
+    "form": "10",
+    "displayName": "Zygarde (10)",
+    "baseText": "When the Kalos region\u2019s ecosystem falls into disarray, it appears and reveals its secret power.",
+    "text": "This is Zygarde's form when about 10% of its cells have been gathered. It runs across the land at speeds greater than 60 mph."
+  },
+  {
+    "speciesId": 718,
+    "form": "50",
+    "displayName": "Zygarde (50)",
+    "baseText": "When the Kalos region\u2019s ecosystem falls into disarray, it appears and reveals its secret power.",
+    "text": "It's thought to be monitoring the ecosystem. There are rumors that even greater power lies hidden within it."
+  },
+  {
+    "speciesId": 718,
+    "form": "Complete",
+    "displayName": "Zygarde (Complete)",
+    "baseText": "When the Kalos region\u2019s ecosystem falls into disarray, it appears and reveals its secret power.",
+    "text": "This is Zygarde's 100% form. It has enough power to overwhelm even Xerneas or Yveltal."
+  },
+  {
+    "speciesId": 718,
+    "form": "Mega",
+    "displayName": "Zygarde (Mega)",
+    "baseText": "When the Kalos region\u2019s ecosystem falls into disarray, it appears and reveals its secret power.",
+    "text": "In response to people's emotions during an unprecedented crisis, Zygarde Mega Evolves and calms the situation with its unmatched power."
+  },
+  {
+    "speciesId": 719,
+    "form": "Mega",
+    "displayName": "Diancie (Mega)",
+    "baseText": "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world.",
+    "text": "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world."
+  },
+  {
+    "speciesId": 740,
+    "form": "Mega",
+    "displayName": "Crabominable (Mega)",
+    "baseText": "It aimed for the top but got lost and ended up on a snowy mountain. Being forced to endure the cold, this Pok\u00e9mon evolved and grew fur.",
+    "text": "It can pulverize reinforced concrete with a light swing of one of its fists, each of which is covered in a thick layer of ice."
+  },
+  {
+    "speciesId": 768,
+    "form": "Mega",
+    "displayName": "Golisopod (Mega)",
+    "baseText": "With a flashing slash of its giant sharp claws, it cleaves seawater\u2014or even air\u2014right in two.",
+    "text": "It uses four of its arms to fiercely assail its foes. Once they've been pushed to the brink of defeat, it finishes them off with the arms it kept hidden."
+  },
+  {
+    "speciesId": 780,
+    "form": "Mega",
+    "displayName": "Drampa (Mega)",
+    "baseText": "It has a compassionate personality, but if it is angered, it completely destroys its surroundings with its intense breath.",
+    "text": "Drampa’s cells have been invigorated, allowing it to regain its youth. It manipulates the atmosphere to summon storms."
+  },
+  {
+    "speciesId": 801,
+    "form": "Mega",
+    "displayName": "Magearna (Mega)",
+    "baseText": "This artificial Pok\u00e9mon, constructed more than 500 years ago, can understand human speech but cannot itself speak.",
+    "text": "This is Magearna once a previously hidden mode activates. The emotions Magearna had begun to feel now hide away as it fells foe after foe."
+  },
+  {
+    "speciesId": 801,
+    "form": "Mega ORIGINAL",
+    "displayName": "Magearna (Mega ORIGINAL)",
+    "baseText": "This artificial Pok\u00e9mon, constructed more than 500 years ago, can understand human speech but cannot itself speak.",
+    "text": "A mechanism to remove Magearna’s limitations has lain secretly within Magearna for 500 years. This mechanism is triggered by a Mega Stone."
+  },
+  {
+    "speciesId": 807,
+    "form": "Mega",
+    "displayName": "Zeraora (Mega)",
+    "baseText": "It electrifies its claws and tears its opponents apart with them. Even if they dodge its attack, they\u2019ll be electrocuted by the flying sparks.",
+    "text": "It stores up 10 lightning strikes' worth of electricity. When it stops limiting itself, it's in the strongest class of electric Pokémon."
+  },
+  {
+    "speciesId": 809,
+    "form": "Gigantamax",
+    "displayName": "Melmetal (Gigantamax)",
+    "baseText": "Revered long ago for its capacity to create iron from nothing, for some reason it has come back to life after 3,000 years.",
+    "text": "In a distant land, there are legends about a cyclopean giant. In fact, the giant was a Melmetal that was flooded with Gigantamax energy."
+  },
+  {
+    "speciesId": 812,
+    "form": "Gigantamax",
+    "displayName": "Rillaboom (Gigantamax)",
+    "baseText": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle.",
+    "text": "Gigantamax energy has caused Rillaboom’s stump to grow into a drum set that resembles a forest."
+  },
+  {
+    "speciesId": 815,
+    "form": "Gigantamax",
+    "displayName": "Cinderace (Gigantamax)",
+    "baseText": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched.",
+    "text": "Gigantamax energy can sometimes cause the diameter of this Pokémon’s fireball to exceed 300 feet."
+  },
+  {
+    "speciesId": 818,
+    "form": "Gigantamax",
+    "displayName": "Inteleon (Gigantamax)",
+    "baseText": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air.",
+    "text": "Gigantamax Inteleon’s Water Gun move fires at Mach 7. As the Pokémon takes aim, it uses the crest on its head to gauge wind and temperature."
+  },
+  {
+    "speciesId": 823,
+    "form": "Gigantamax",
+    "displayName": "Corviknight (Gigantamax)",
+    "baseText": "This Pok\u00e9mon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe.",
+    "text": "Imbued with Gigantamax energy, its wings can whip up winds more forceful than any a hurricane could muster. The gusts blow everything away."
+  },
+  {
+    "speciesId": 826,
+    "form": "Gigantamax",
+    "displayName": "Orbeetle (Gigantamax)",
+    "baseText": "It\u2019s famous for its high level of intelligence, and the large size of its brain is proof that it also possesses immense psychic power.",
+    "text": "Its brain has grown to a gargantuan size, as has the rest of its body. This Pokémon’s intellect and psychic abilities are overpowering."
+  },
+  {
+    "speciesId": 834,
+    "form": "Gigantamax",
+    "displayName": "Drednaw (Gigantamax)",
+    "baseText": "With jaws that can shear through steel rods, this highly aggressive Pok\u00e9mon chomps down on its unfortunate prey.",
+    "text": "It responded to Gigantamax energy by becoming bipedal. First it comes crashing down on foes, and then it finishes them off with its massive jaws."
+  },
+  {
+    "speciesId": 839,
+    "form": "Gigantamax",
+    "displayName": "Coalossal (Gigantamax)",
+    "baseText": "It\u2019s usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit.",
+    "text": "Its body is a colossal stove. With Gigantamax energy stoking the fire, this Pokémon’s flame burns hotter than 3,600 degrees Fahrenheit."
+  },
+  {
+    "speciesId": 841,
+    "form": "Gigantamax",
+    "displayName": "Flapple (Gigantamax)",
+    "baseText": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.",
+    "text": "Under the influence of Gigantamax energy, it produces much more sweet nectar, and its shape has changed to resemble a giant apple."
+  },
+  {
+    "speciesId": 842,
+    "form": "Gigantamax",
+    "displayName": "Appletun (Gigantamax)",
+    "baseText": "Eating a sweet apple caused its evolution. A nectarous scent wafts from its body, luring in the bug Pok\u00e9mon it preys on.",
+    "text": "Due to Gigantamax energy, this Pokémon’s nectar has thickened. The increased viscosity lets the nectar absorb more damage than before."
+  },
+  {
+    "speciesId": 844,
+    "form": "Gigantamax",
+    "displayName": "Sandaconda (Gigantamax)",
+    "baseText": "When it contracts its body, over 220 pounds of sand sprays from its nose. If it ever runs out of sand, it becomes disheartened.",
+    "text": "Sand swirls around its body with such speed and power that it could pulverize a skyscraper."
+  },
+  {
+    "speciesId": 849,
+    "form": "Gigantamax",
+    "displayName": "Toxtricity (Gigantamax)",
+    "baseText": "When this Pok\u00e9mon sounds as if it\u2019s strumming a guitar, it\u2019s actually clawing at the protrusions on its chest to generate electricity.",
+    "text": "Its excessive electric energy is its weapon. This Pokémon can build up more electricity than any thundercloud."
+  },
+  {
+    "speciesId": 849,
+    "form": "Gigantamax",
+    "displayName": "Toxtricity (Gigantamax)",
+    "baseText": "When this Pok\u00e9mon sounds as if it\u2019s strumming a guitar, it\u2019s actually clawing at the protrusions on its chest to generate electricity.",
+    "text": "Its excessive electric energy is its weapon. This Pokémon can build up more electricity than any thundercloud."
+  },
+  {
+    "speciesId": 851,
+    "form": "Gigantamax",
+    "displayName": "Centiskorch (Gigantamax)",
+    "baseText": "When it heats up, its body temperature reaches about 1,500 degrees Fahrenheit. It lashes its body like a whip and launches itself at enemies.",
+    "text": "Gigantamax energy has evoked a rise in its body temperature, now reaching over 1,800 degrees Fahrenheit. Its heat waves incinerate its enemies."
+  },
+  {
+    "speciesId": 858,
+    "form": "Gigantamax",
+    "displayName": "Hatterene (Gigantamax)",
+    "baseText": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others.",
+    "text": "This Pokémon can read the emotions of creatures over 30 miles away. The minute it senses hostility, it goes on the attack."
+  },
+  {
+    "speciesId": 861,
+    "form": "Gigantamax",
+    "displayName": "Grimmsnarl (Gigantamax)",
+    "baseText": "With the hair wrapped around its body helping to enhance its muscles, this Pok\u00e9mon can overwhelm even Machamp.",
+    "text": "Gigantamax energy has caused more hair to sprout all over its body. With the added strength, it can jump over the world’s tallest building."
+  },
+  {
+    "speciesId": 869,
+    "form": "Gigantamax",
+    "displayName": "Alcremie (Gigantamax)",
+    "baseText": "When it trusts a Trainer, it will treat them to berries it\u2019s decorated with cream.",
+    "text": "Cream pours endlessly from this Pokémon’s body. The cream stiffens when compressed by an impact. A harder impact results in harder cream."
+  },
+  {
+    "speciesId": 870,
+    "form": "Mega",
+    "displayName": "Falinks (Mega)",
+    "baseText": "Five of them are troopers, and one is the brass. The brass\u2019s orders are absolute.",
+    "text": "Mega Falinks has taken on the ultimate battle formation, which can be achieved only if the troopers and brass have the strongest of bonds."
+  },
+  {
+    "speciesId": 879,
+    "form": "Gigantamax",
+    "displayName": "Copperajah (Gigantamax)",
+    "baseText": "They came over from another region long ago and worked together with humans. Their green skin is resistant to water.",
+    "text": "After this Pokémon has Gigantamaxed, its massive nose can utterly demolish large structures with a single smashing blow."
+  },
+  {
+    "speciesId": 884,
+    "form": "Gigantamax",
+    "displayName": "Duraludon (Gigantamax)",
+    "baseText": "Its body resembles polished metal, and it\u2019s both lightweight and strong. The only drawback is that it rusts easily.",
+    "text": "It’s grown to resemble a skyscraper. Parts of its towering body glow due to a profusion of energy."
+  },
+  {
+    "speciesId": 892,
+    "form": "Gigantamax",
+    "displayName": "Urshifu (Gigantamax)",
+    "baseText": "This form of Urshifu is a strong believer in the one-hit KO. Its strategy is to leap in close to foes and land a devastating blow with a hardened fist.",
+    "text": "People call it the embodiment of rage. It’s said that this Pokémon’s terrifying expression and shout will rid the world of malevolence."
+  },
+  {
+    "speciesId": 892,
+    "form": "Gigantamax",
+    "displayName": "Urshifu (Gigantamax)",
+    "baseText": "This form of Urshifu is a strong believer in the one-hit KO. Its strategy is to leap in close to foes and land a devastating blow with a hardened fist.",
+    "text": "As it waits for the right moment to unleash its Gigantamax power, this Pokémon maintains a perfect one-legged stance. It won’t even twitch."
+  },
+  {
+    "speciesId": 952,
+    "form": "Mega",
+    "displayName": "Scovillain (Mega)",
+    "baseText": "The red head converts spicy chemicals into fire energy and blasts the surrounding area with a super spicy stream of flame.",
+    "text": "Mega Evolution has dialed up this Pok\u00e9mon\u2019s spiciness. It swings its \u201cnecktie\u201d around to wallop its foes."
+  },
+  {
+    "speciesId": 970,
+    "form": "Mega",
+    "displayName": "Glimmora (Mega)",
+    "baseText": "When this Pok\u00e9mon detects danger, it will open up its crystalline petals and fire beams from its conical body.",
+    "text": "Glimmora’s petals—now larger and separated from its main body—rotate around it to provide defense while scattering poisonous fragments."
+  },
+  {
+    "speciesId": 978,
+    "form": "Mega CURLY",
+    "displayName": "Tatsugiri (Mega CURLY)",
+    "baseText": "This is a small dragon Pok\u00e9mon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.",
+    "text": "Tatsugiri's brain has been invigorated by Mega Evolution, making it even wilier. It can create and command copies of itself."
+  },
+  {
+    "speciesId": 978,
+    "form": "Mega DROOPY",
+    "displayName": "Tatsugiri (Mega DROOPY)",
+    "baseText": "This is a small dragon Pok\u00e9mon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.",
+    "text": "It solidifies the energy of Mega Evolution, building up an overflowing pile to launch as projectiles. These projectiles explode on contact."
+  },
+  {
+    "speciesId": 978,
+    "form": "Mega STRETCHY",
+    "displayName": "Tatsugiri (Mega STRETCHY)",
+    "baseText": "This is a small dragon Pok\u00e9mon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.",
+    "text": "Using the energy of Mega Evolution, it creates a dish to ride upon, allowing it to move with total freedom—even through the air."
+  },
+  {
+    "speciesId": 998,
+    "form": "Mega",
+    "displayName": "Baxcalibur (Mega)",
+    "baseText": "This Pok\u00e9mon blasts cryogenic air out from its mouth. This air can instantly freeze even liquid-hot lava.",
+    "text": "Baxcalibur's dorsal blade has grown even more massive thanks to Mega Evolution. This Pokémon fires beams from the hilt at its solar plexus."
+  },
+  {
+    "speciesId": 20,
+    "form": "Totem-alola",
+    "displayName": "Raticate (Totem-alola)",
+    "baseText": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
+    "text": "Its hind feet are webbed, so it's a strong swimmer. It can cross rivers and sometimes even oceans."
+  },
+  {
+    "speciesId": 105,
+    "form": "Totem",
+    "displayName": "Marowak (Totem)",
+    "baseText": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+    "text": "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon."
+  },
+  {
+    "speciesId": 735,
+    "form": "Totem",
+    "displayName": "Gumshoos (Totem)",
+    "baseText": "When it finds a trace of its prey, it patiently stakes out the location...but it's always snoozing by nightfall.",
+    "text": "When it finds a trace of its prey, it patiently stakes out the location...but it's always snoozing by nightfall."
+  },
+  {
+    "speciesId": 738,
+    "form": "Totem",
+    "displayName": "Vikavolt (Totem)",
+    "baseText": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies.",
+    "text": "It builds up electricity in its abdomen, focuses it through its jaws, and then fires the electricity off in concentrated beams."
+  },
+  {
+    "speciesId": 743,
+    "form": "Totem",
+    "displayName": "Ribombee (Totem)",
+    "baseText": "It rolls up pollen into puffs. It makes many different varieties, some used as food and others used in battle.",
+    "text": "It makes pollen puffs from pollen and nectar. The puffs' effects depend on the type of ingredients and how much of each one is used."
+  },
+  {
+    "speciesId": 752,
+    "form": "Totem",
+    "displayName": "Araquanid (Totem)",
+    "baseText": "It delivers headbutts with the water bubble on its head. Small Pokémon get sucked into the bubble, where they drown.",
+    "text": "It launches water bubbles with its legs, drowning prey within the bubbles. This Pokémon can then take its time to savor its meal."
+  },
+  {
+    "speciesId": 754,
+    "form": "Totem",
+    "displayName": "Lurantis (Totem)",
+    "baseText": "It requires a lot of effort to maintain Lurantis's vivid coloring, but some collectors enjoy this work and treat it as their hobby.",
+    "text": "This Pokémon resembles a beautiful flower. A properly raised Lurantis will have gorgeous, brilliant colors."
+  },
+  {
+    "speciesId": 758,
+    "form": "Totem",
+    "displayName": "Salazzle (Totem)",
+    "baseText": "For some reason, only females have been found. It creates a reverse harem of male Salandit that it lives with.",
+    "text": "Only female Salazzle exist. They emit a gas laden with pheromones to captivate male Salandit."
+  },
+  {
+    "speciesId": 777,
+    "form": "Totem",
+    "displayName": "Togedemaru (Totem)",
+    "baseText": "The spiny fur on its back is normally at rest. When this Pokémon becomes agitated, its fur stands on end and stabs into its attackers.",
+    "text": "With the long hairs on its back, this Pokémon takes in electricity from other electric Pokémon. It stores what it absorbs in an electric sac."
+  },
+  {
+    "speciesId": 778,
+    "form": "Totem-disguised",
+    "displayName": "Mimikyu (Totem-disguised)",
+    "baseText": "Its actual appearance is unknown. A scholar who saw what was under its rag was overwhelmed by terror and died from the shock.",
+    "text": "It wears a rag fashioned into a Pikachu costume in an effort to look less scary. Unfortunately, the costume only makes it creepier."
+  },
+  {
+    "speciesId": 778,
+    "form": "Totem-busted",
+    "displayName": "Mimikyu (Totem-busted)",
+    "baseText": "Its actual appearance is unknown. A scholar who saw what was under its rag was overwhelmed by terror and died from the shock.",
+    "text": "It wears a rag fashioned into a Pikachu costume in an effort to look less scary. Unfortunately, the costume only makes it creepier."
+  },
+  {
+    "speciesId": 784,
+    "form": "Totem",
+    "displayName": "Kommo-o (Totem)",
+    "baseText": "When it spots enemies, it threatens them by jingling the scales on its tail. Weak opponents will crack and flee in panic.",
+    "text": "It clatters its tail scales to unnerve opponents. This Pokémon will battle only those who stand steadfast in the face of this display."
+  }
+]
