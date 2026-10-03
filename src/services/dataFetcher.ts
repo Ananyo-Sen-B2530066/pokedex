@@ -290,6 +290,19 @@ class DataFetcher {
 
   private refreshing = false;
 
+  // Background refreshes (stale-cache refresh after init) are disabled on
+  // serverless platforms, where long-lived work isn't possible and the dataset
+  // is a committed read-only snapshot. The local server keeps them enabled.
+  private backgroundRefreshEnabled = true;
+
+  setBackgroundRefreshEnabled(v: boolean): void {
+    this.backgroundRefreshEnabled = v;
+  }
+
+  getBackgroundRefreshEnabled(): boolean {
+    return this.backgroundRefreshEnabled;
+  }
+
   // Monotonic counter bumped whenever the in-memory dataset is replaced
   // (disk-cache load or a completed full fetch). Derived caches in index.ts
   // compare against this so they never serve state computed from stale data.
@@ -334,7 +347,7 @@ class DataFetcher {
 
       // Boot is instant from disk even if the cache is old; a stale cache just
       // triggers a background refresh so the app keeps serving meanwhile.
-      if (pokeapiClient.isDiskCacheStale()) {
+      if (this.backgroundRefreshEnabled && pokeapiClient.isDiskCacheStale()) {
         console.log('DataFetcher: Cache is stale — refreshing in the background (serving cached data meanwhile)...');
         this.refreshData();
       }

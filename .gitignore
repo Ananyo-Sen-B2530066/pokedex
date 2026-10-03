@@ -1,8 +1,8 @@
 node_modules/
 dist/
-data/cache.json
 data/cache.backup.json
 data/.Rhistory
+/.netlify/
 .DS_Store
 .env
 *.log

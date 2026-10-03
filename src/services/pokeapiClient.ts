@@ -1,13 +1,26 @@
 import axios, { AxiosInstance } from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
+import { resolveProjectPath } from './projectPaths';
 
-const CACHE_DIR = path.join(process.cwd(), 'data');
-const CACHE_FILE = path.join(CACHE_DIR, 'cache.json');
-const CACHE_BACKUP_FILE = path.join(CACHE_DIR, 'cache.backup.json');
-const CACHE_TMP_FILE = path.join(CACHE_DIR, 'cache.json.tmp');
 const CACHE_TTL = 24 * 60 * 60 * 1000;
 const CACHE_VERSION = 3;
+
+// Locates the data directory wherever this code is running (local cwd or the
+// Netlify function bundle — see projectPaths.ts).
+function getCacheDir(): string {
+  const existing = resolveProjectPath('data/cache.json');
+  return existing ? path.dirname(existing) : path.join(process.cwd(), 'data');
+}
+function getCacheFile(): string {
+  return path.join(getCacheDir(), 'cache.json');
+}
+function getCacheBackupFile(): string {
+  return path.join(getCacheDir(), 'cache.backup.json');
+}
+function getCacheTmpFile(): string {
+  return path.join(getCacheDir(), 'cache.json.tmp');
+}
 
 interface CachedData {
   data: any;
@@ -54,6 +67,18 @@ export class PokeAPIClient {
   private moveCache: Map<string, CachedData> = new Map();
   private moveList: { name: string; url: string }[] | null = null;
   private diskCache: { pokemon: any[]; evolutionChains?: any; moves?: any[]; timestamp: number; version?: number } | null = null;
+  private diskCacheReadOnly = false;
+
+  // On serverless platforms the filesystem is read-only outside /tmp, so cache
+  // writes are disabled and the committed data/cache.json is treated as a
+  // read-only snapshot (refreshed locally and re-committed).
+  setDiskCacheReadOnly(v: boolean): void {
+    this.diskCacheReadOnly = v;
+  }
+
+  getDiskCacheReadOnly(): boolean {
+    return this.diskCacheReadOnly;
+  }
 
   constructor() {
     this.client = axios.create({
@@ -259,6 +284,14 @@ export class PokeAPIClient {
   }
 
   saveDiskCache(pokemon: any[], evolutionChains?: any, moves?: any[]): void {
+    if (this.diskCacheReadOnly) {
+      console.log('Disk cache writes disabled (read-only mode); skipping save');
+      return;
+    }
+    const CACHE_FILE = getCacheFile();
+    const CACHE_TMP_FILE = getCacheTmpFile();
+    const CACHE_BACKUP_FILE = getCacheBackupFile();
+    const CACHE_DIR = getCacheDir();
     if (!fs.existsSync(CACHE_DIR)) {
       fs.mkdirSync(CACHE_DIR, { recursive: true });
     }
@@ -280,6 +313,8 @@ export class PokeAPIClient {
   }
 
   loadDiskCache(): { pokemon: any[]; evolutionChains?: any; moves?: any[] } | null {
+    const CACHE_FILE = getCacheFile();
+    const CACHE_BACKUP_FILE = getCacheBackupFile();
     const primary = this.tryParseCacheFile(CACHE_FILE);
     if (primary) return primary;
 
@@ -289,6 +324,7 @@ export class PokeAPIClient {
     const backup = this.tryParseCacheFile(CACHE_BACKUP_FILE);
     if (backup) {
       try {
+        const CACHE_DIR = getCacheDir();
         if (!fs.existsSync(CACHE_DIR)) fs.mkdirSync(CACHE_DIR, { recursive: true });
         fs.copyFileSync(CACHE_BACKUP_FILE, CACHE_FILE);
         console.log('Disk cache restored from backup');
@@ -340,6 +376,7 @@ export class PokeAPIClient {
 
   getDiskCacheInfo(): { exists: boolean; timestamp: number | null; ageMs: number | null; version: number | null } {
     try {
+      const CACHE_FILE = getCacheFile();
       if (!fs.existsSync(CACHE_FILE)) return { exists: false, timestamp: null, ageMs: null, version: null };
       const raw = fs.readFileSync(CACHE_FILE, 'utf-8');
       const data = JSON.parse(raw);
@@ -358,7 +395,8 @@ export class PokeAPIClient {
       abilityCacheSize: this.abilityCache.size,
       moveCacheSize: this.moveCache.size,
       moveListLoaded: !!this.moveList,
-      diskCacheExists: fs.existsSync(CACHE_FILE),
+      diskCacheExists: fs.existsSync(getCacheFile()),
+      diskCacheReadOnly: this.diskCacheReadOnly,
     };
   }
 

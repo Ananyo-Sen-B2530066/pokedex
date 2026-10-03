@@ -471,13 +471,27 @@ function showProgress(show) {
 async function loadPokemon() {
   pokemonGrid.innerHTML = '<div class="loading">Loading Pokédex data...</div>';
   try {
-    const response = await fetch(`${API_BASE}/pokemon`);
-    const data = await response.json();
-    if (data.loading) {
-      pokemonGrid.innerHTML = '<div class="loading">Server is still loading data. Please wait...</div>';
-      return;
+    // Pull the dataset a page at a time so each response stays comfortably under
+    // serverless platform caps (Netlify: 6 MB buffered). Handles both the paged
+    // shape ({pokemon,total,hasMore}) and the plain-array response of older/local
+    // installs.
+    const PAGE = 400;
+    const loaded = [];
+    for (let offset = 0; ; offset += PAGE) {
+      const response = await fetch(`${API_BASE}/pokemon?offset=${offset}&limit=${PAGE}`);
+      const data = await response.json();
+      if (data.loading) {
+        pokemonGrid.innerHTML = '<div class="loading">Server is still loading data. Please wait...</div>';
+        return;
+      }
+      if (Array.isArray(data)) {
+        loaded.push(...data);
+        break;
+      }
+      loaded.push(...data.pokemon);
+      if (!data.hasMore || loaded.length >= data.total) break;
     }
-    allPokemon = data;
+    allPokemon = loaded;
     updateLoadStatus(true);
     filterPokemon();
     runSearch();

@@ -1,0 +1,25 @@
+# Netlify deploy config for the Rotom-Dex Pokédex.
+#
+# - public/ (static frontend) is the publish directory.
+# - Every other path is rewritten to the catch-all Netlify Function, which
+#   mounts the Express API. Static files (icons, css, js, index.html) are served
+#   by the CDN because Netlify lets an existing file win over a soft redirect.
+# - data/cache.json (the committed PokeAPI snapshot) is bundled into the
+#   function archive so cold starts load instantly without touching the network.
+
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  included_files = [
+    "data/cache.json",
+    "data/legendary.json",
+    "data/form-flavors.json"
+  ]
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api"
+  status = 200

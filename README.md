@@ -60,6 +60,45 @@ Set `POKEDEX_OWNER_KEY` to something non-default before running in a real deploy
 - `npm start` — run the compiled server
 - `npm run typecheck` — type-check without emitting
 
+## Deploying to Netlify
+
+The app runs on Netlify as a **static frontend + a catch-all Function**:
+`public/` is served by Netlify's CDN and every other path is rewritten to
+`netlify/functions/api.ts`, which mounts the same Express app (`netlify.toml`
+wires all of this up — build command, publish dir and redirects).
+
+Because Netlify Functions are stateless and short-lived (60 s, 6 MB response
+cap), the serverless build differs from the local server:
+
+- **No network access at boot.** The PokeAPI snapshot (`data/cache.json`) is a
+  committed, read-only file that's bundled into the function. Cold starts load
+  it in ~20 ms.
+- **Pagination on `/pokemon`:** responses are pulled from the client in pages of
+  400 (`?offset&limit`) so each payload stays well under the 6 MB cap.
+- **No background refresh / cache writes.** `/api/refresh` returns a no-op and
+  disk writes are disabled on serverless.
+
+### Deploy
+
+1. Push this repo to GitHub.
+2. Netlify → **Add new site** → **Import an existing project** → pick the repo.
+3. Build command `npm run build`, publish directory `public` (already set in
+   `netlify.toml`, so the defaults usually just work).
+4. Deploy. That's it.
+
+### Refreshing the dataset (serverless)
+
+The dataset is a snapshot you control. To update it after a new game/API drop:
+
+```bash
+npm start                    # local server (fetches/refreshes PokéAPI)
+curl -i -X POST "http://localhost:3000/api/refresh?force=1" -H "x-owner-key: rotom-owner"
+# wait for it to finish, then:
+git add data/cache.json && git commit -m "Update dataset snapshot" && git push
+```
+
+Redeploy after the push — the app picks up the new snapshot automatically.
+
 ## Project layout
 
 ```
